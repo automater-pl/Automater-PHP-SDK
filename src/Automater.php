@@ -103,9 +103,6 @@
 
             $this->_ch = curl_init();
 
-            curl_setopt($this->_ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-            curl_setopt($this->_ch, CURLOPT_USERPWD, "Automater:@utomater1");
-
             curl_setopt($this->_ch, CURLOPT_URL, $url);
             curl_setopt($this->_ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($this->_ch, CURLOPT_TIMEOUT, $this->settings['timeout']);
